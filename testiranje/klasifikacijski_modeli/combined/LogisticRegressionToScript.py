@@ -14,8 +14,8 @@ print("Current Working Directory:", os.getcwd())
 
 
 # Load the datasets
-mat_data = pd.read_csv('student-mat.csv', sep=';')
-por_data = pd.read_csv('student-por.csv', sep=';')
+mat_data = pd.read_csv('../../student/student-mat.csv', sep=';')
+por_data = pd.read_csv('../../student/student-por.csv', sep=';')
 
 # View the first few rows
 print(mat_data.head())
@@ -64,7 +64,7 @@ combined_data[numeric_features] = scaler.fit_transform(combined_data[numeric_fea
 
 
 # %% [markdown]
-# # Training the Linear Regression Model
+# # Training the Logistic Regression model
 # 
 
 # %%
